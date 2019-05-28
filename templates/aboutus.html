@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Sentiment Analysis</title>  
+        <!-- <link  href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+
+        <div class="jumbotron text-center" >
+            <h1>About US</h1>
+        </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                
+                    <a class="navbar-brand" href="/">Review Sentiment Analyzer</a>
+                  </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="{{ url_for('logistic') }}">Logisitc Regressor</a></li>
+                    <li><a href="{{ url_for('svm') }}">Linear SVM Model</a></li>
+                    <li><a href="{{ url_for('cnn') }}">CNN</a></li>
+                    <li><a href="{{ url_for('lstm') }}">LSTM</a></li>
+                    <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                  </ul>
+                </div>
+
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><h2 style='font-family: cursive; text-align: center;'>Kunal Verma</h2></div>
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <td colspan=4>
+                                    <center><img src="{{ url_for('static', filename='images/man.png') }}" class='img-thumbnail'alt='senti' width="260px"/></center>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th style='text-align:left;' colspan="2">Contact</th>
+                                <td style='color: cornflowerblue; text-align: left;' colspan="2">8699973170</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  <th style='text-align: left;' colspan="2">Email</th>
+                                  <td style='color: cornflowerblue; text-align: left;' colspan="2">vkunal1996@gmail.com</td>
+                              </tr>
+                              <tr>
+                                <td><center><img src="{{ url_for('static', filename='images/github.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                                <td><center><img src="{{ url_for('static', filename='images/linkedIn.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                                <td><center><img src="{{ url_for('static', filename='images/facebook.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                                <td><center><img src="{{ url_for('static', filename='images/instagram.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class='col-sm-6'>
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><h2 style='font-family: cursive; text-align: center;'>Dinesh Pabbi</h2></div>
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <td colspan=4>
+                                    <center><img src="{{ url_for('static', filename='images/man.png') }}" class='img-thumbnail'alt='senti' width="260px"/></center>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th style='text-align:left;' colspan="2">Contact</th>
+                                <td style='color: cornflowerblue; text-align: left;' colspan="2">7009253106</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  <th style='text-align: left;' colspan="2">Email</th>
+                                  <td style='color: cornflowerblue; text-align: left;' colspan="2">dineshpabbi10@gmail.com</td>
+                              </tr>
+                              <tr>
+                                <td><center><img src="{{ url_for('static', filename='images/github.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                                <td><center><img src="{{ url_for('static', filename='images/linkedIn.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                                <td><center><img src="{{ url_for('static', filename='images/facebook.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                                <td><center><img src="{{ url_for('static', filename='images/instagram.png') }}" alt='senti' width="60px" class='img-thumbnail'/></center></td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+              
+                </div>
+            </div>
+        </div>
+          
+    </body>
+</html>
